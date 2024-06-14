@@ -1,0 +1,79 @@
+html {
+  font-size: 22px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: whitesmoke;
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+    .sidebar a {
+        padding: 6px 6px 6px 32px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #818181;
+        display: block;
+    }
+
+    .sidebar a:hover {
+        color: #f1f1f1;
+        background-color: white
+     
+     }
+    .sidebar a.active {
+        background-color: white;
+        color: black;
+    }
+    .sidebar a:hover:not(.active) {
+        background-color: whitesmoke;
+        color: #818181;
+    }
+
+
+.main .containermain {
+    margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+.containermain {
+    margin-left: 200px; /* Same as the width of the sidenav */
+}
+h1 {
+    display: inline-block;
+    font-size: 42px;
+    background: linear-gradient(to right, RGB(179, 207, 230), RGB(41, 143, 230));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.signinb {
+    background: linear-gradient(to right, RGB(179, 207, 230), RGB(41, 143, 230));
+}

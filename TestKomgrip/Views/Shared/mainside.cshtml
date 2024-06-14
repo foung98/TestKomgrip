@@ -1,0 +1,42 @@
+﻿
+<aside class="main-sidebar">
+
+    <div class="sidebar p-0">
+        <div class=" text-center p-4">
+            <h2>Quiz</h2>
+        </div>
+        <!-- Sidebar Menu -->
+        <nav class="mt-4">
+            <ul class="nav nav-pills nav-sidebar flex-column nav-compact" data-widget="treeview" role="menu">
+                <li id="nav-menu-1" class="nav-item mt-2" name="nav-side-menu">
+                    <a asp-controller="Home" asp-action="Index" class="" name="sbar">
+                        <i class="nav-icon fa-brands fa-bitcoin"></i>
+                        <span class="text-nowrap ">
+                            Dashboard
+                        </span>
+                    </a>
+                </li>
+                <li id="nav-menu-2" class="nav-item mt-2" name="nav-side-menu">
+                    <a asp-controller="Home" asp-action="ManageUsers" class="" name="sbar">
+                        <i class="nav-icon fa-solid fa-user-pen"></i>
+                        <span class="text-nowrap ">
+                            Manage users
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item mt-3">
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
+                </li>
+                <li class="nav-item mt-3">
+                    <a asp-controller="Authen" asp-action="Logout" class="" name="sbar">
+                        <i class="nav-icon fa-solid fa-arrow-right-from-bracket"></i>
+                        <span class="text-nowrap ">
+                            Logout
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+</aside>

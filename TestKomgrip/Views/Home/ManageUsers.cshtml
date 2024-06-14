@@ -1,0 +1,63 @@
+﻿@model IEnumerable<TestKomgrip.Models.UserModel>
+@{
+   
+    ViewData["Title"] = "Manage users";
+}
+
+<div class="containermain">
+    @ViewData["Title"]
+    <table id="myTable" class="display table" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Position</th>               
+                <th>Last login</th>
+                <th>Tools</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                @{
+                    int tbRow = 0;
+                }
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                            @{
+                                tbRow++;
+                            }
+                            @tbRow
+                            @Html.HiddenFor(Modelitem => item.Id)
+                            @Html.HiddenFor(Modelitem => item.NameId)
+                    </td>
+                    <td>
+                            @Html.DisplayFor(Modelitem => item.Name)
+                    </td>
+                    <td>
+                            @Html.DisplayFor(Modelitem => item.Email)
+                    </td>
+                    <td>
+                            @Html.DisplayFor(Modelitem => item.Position)
+                    </td>
+                    <td>
+                            @Html.DisplayFor(Modelitem => item.Lastlogin)
+                    </td>
+
+                    <td>
+                        
+                        <a asp-action="Edit" asp-route-id="@item.NameId">Edit</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+                }
+            </tr>
+           
+        </tbody>
+    </table>
+</div>
+<script>
+    
+</script>
